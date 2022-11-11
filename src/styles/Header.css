@@ -1,0 +1,107 @@
+/*Mobile First*/
+.container-header{
+    display: block;
+    overflow-x: hidden;
+}
+.container-title{
+    display: grid;
+    grid-template-areas: 
+    "title cart"
+    "title cuantity"
+    ;
+   background: linear-gradient(to right, #feb940, #fe6730);
+}
+.container-h1{
+    display: inline-block;
+    color: black;
+    grid-area: title;
+    margin-left: 5px;
+}
+.container-p {
+    justify-self: right;
+    grid-area: cart;
+    margin: 30px 50px;
+}
+.container-arrow{
+
+}
+.cuantity{
+    justify-self: right;
+    grid-area: cuantity;
+    display: inline-block;
+    margin: 0px 50px 50px 0px;
+}
+
+@media(min-width: 576px) {
+    /* Tablet */
+    .container-header{
+        display: block;
+        overflow-x: hidden;
+    }
+    .container-title{
+        display: grid;
+       grid-template-areas: 
+       "title cart"
+       "title cuantity"
+       ;
+       background: linear-gradient(to right, #feb940, #fe6730);
+    }
+    .container-h1{
+        display: inline-block;
+        color: black;
+        grid-area: title;
+        margin-left: 20px;
+    }
+    .container-p {
+        justify-self: right;
+        grid-area: cart;
+        margin: 30px 50px 0px 0px;
+    }
+    .container-arrow{
+
+    }
+    .cuantity{
+        justify-self: right;
+        grid-area: cuantity;
+        display: inline-block;
+        margin: 0px 50px 50px 0px;
+    }
+}
+
+@media (min-width: 1199.98px) {
+    /*Desktop*/
+    .container-header{
+        display: block;
+        overflow-x: hidden;
+    }
+    .container-title{
+        display: grid;
+       grid-template-areas: 
+       "title cart"
+       "title cuantity"
+       ;
+       background: linear-gradient(to right, #feb940, #fe6730);
+    }
+    .container-h1{
+        margin-left: 50px;
+        display: inline-block;
+        color: black;
+        grid-area: title;
+        margin-left: 40px;
+    }
+    .container-p {
+        justify-self: right;
+        grid-area: cart;
+        margin: 30px 50px 0px 0px;
+    }
+    .container-arrow{
+
+    }
+
+    .cuantity{
+        justify-self: right;
+        grid-area: cuantity;
+        display: inline-block;
+        margin: 0px 50px 50px 0px;
+    }
+}

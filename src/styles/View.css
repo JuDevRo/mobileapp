@@ -1,0 +1,215 @@
+/*Mobile First*/
+.container-view-real{
+    display: flex;
+    justify-content: center;
+}
+.container-view{
+    display: grid;
+    justify-content: left;
+    grid-template-areas: 
+    "image"
+    "description"
+    "actions"
+    ;
+}
+
+.image{
+    grid-area: image;
+    width: 300px;
+}
+
+.description{
+    grid-area: description;
+}
+
+.description p {
+    background-color: rgba(220, 214, 214, 0.914);
+    display: block;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    
+    
+    border-radius: 20px;
+    
+}
+
+.actions{
+    grid-area: actions;
+}
+
+.actions-p{
+    background-color: rgba(220, 214, 214, 0.914);
+    display: block;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    
+    
+    border-radius: 20px;
+}
+
+.actions button {
+    margin: 0px 0px 0px 10px;
+    border: ;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    background-color: rgba(220, 214, 214, 0.914);
+    
+    background-color: ;
+}
+
+@media(min-width: 576px) {
+    /* Tablet */
+    .container-view-real{
+        display: flex;
+        justify-content: center;
+    }
+
+   .container-view{
+    display: grid;
+    justify-content: left;
+    grid-template-areas: 
+    
+    "image description"
+    "image actions"
+    ;
+    }
+
+    .container-breadcrumb {
+    
+    }
+
+    .image-container{
+        
+    }
+
+    .image{
+        grid-area: image;
+        width: 300px;
+        
+        margin-top: 50px;
+        
+    }
+
+    .description{
+        grid-area: description;
+        margin-top: 25px;
+        margin-left: 50px;
+    }
+    .description p {
+        background-color: rgba(220, 214, 214, 0.914);
+        display: block;
+        padding-left: 5px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        
+        
+        border-radius: 20px;
+        
+    }
+    .actions{
+        grid-area: actions;
+        margin-left: 50px;
+    }
+
+    .actions-p{
+        background-color: rgba(220, 214, 214, 0.914);
+        display: block;
+        padding-left: 5px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        
+        
+        border-radius: 20px;
+    }
+
+    .actions button {
+        margin: 0px 0px 0px 10px;
+        border: ;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 10px;
+        background-color: rgba(220, 214, 214, 0.914);
+        
+        background-color: ;
+    }
+}
+
+@media (min-width: 1199.98px) {
+    /*Desktop*/
+
+    .cointer-view-real{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-view{
+        display: grid;
+        justify-content: left;
+        grid-template-areas: 
+        "image description"
+        "image actions"
+        ;
+    }
+
+    .image-container{
+        width: 400px;
+        margin-left: 50px;
+        margin-right: 100px;
+    }
+
+    .image{
+        grid-area: image;
+        width: 400px;
+        
+        margin-top: 50px;
+        
+    }
+
+    .description{
+        grid-area: description;
+        margin-top: 25px;
+        ;
+       
+    }
+
+    .description p {
+        background-color: rgba(220, 214, 214, 0.914);
+        display: block;
+        padding: 5px;
+        
+        border-radius: 20px;
+        
+    }
+    .actions{
+        
+    }
+
+    .actions-p{
+        background-color: rgba(220, 214, 214, 0.914);
+        display: block;
+        padding: 5px;
+        
+        border-radius: 20px;
+    }
+
+    .actions button {
+        margin: 0px 0px 0px 10px;
+        border: ;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 10px;
+        background-color: rgba(220, 214, 214, 0.914);
+        
+        background-color: ;
+    }
+
+    .actions-h2{
+        margin-right: 20px;
+    }
+}
